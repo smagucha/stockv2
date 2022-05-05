@@ -1,0 +1,5 @@
+# created by virtualenv automatically
+.env
+htmlcov/
+.coverage
+__pycache+__/

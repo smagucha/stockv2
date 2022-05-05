@@ -1,0 +1,38 @@
+{%extends 'goodies/base.html'%}
+{%block title%}{%endblock title%}
+{%block content%}
+<a href ="{% url 'CategoryCreate' %}">
+    CategoryCreate
+</a>
+<table>
+    <tr>
+        <th>
+            name
+        </th>
+        <th>
+            update
+        </th>
+        <td>
+            delete
+        </td>
+    </tr>
+    {%for data in category_data%}
+    <tr>
+        <td>
+            {{data.name}}
+        </td>
+        <td>
+            <a href ="{% url 'CategoryUpdate' data.id %}">
+                update
+            </a>
+        </td>
+        <td>
+            <a href ="{% url 'DeleteCategory' data.id %}">
+                delete
+            </a>
+        </td>
+    </tr>
+    {%endfor%}
+
+</table>
+{%endblock%}

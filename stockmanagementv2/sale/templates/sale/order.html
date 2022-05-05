@@ -1,0 +1,57 @@
+{%extends 'goodies/base.html'%}
+{%block title%}{{page_title}}{%endblock title%}
+{%block content%}
+<a href="{% url 'OrderCreate' %}">add order</a>
+<table border="2">
+    <caption>Order Summary</caption>
+    <tr>
+        <th>
+           buyer
+        </th>
+        <th>
+            email
+        </th>
+        <th>
+            phonenumber
+        </th>
+        <th>
+            product
+        </th>
+        <th>
+            dateordered
+        </th>
+        <th>
+           quantity
+        </th>
+        <th>
+            delete
+        </th>
+    </tr>
+    {% for data in order_data %}
+        <tr>
+            <td>
+                 {{data.buyer}}
+            </td>
+            <td>
+                {{data.email}}
+            </td>
+            <td>
+                {{data.phonenumber}}
+            </td>
+            <td>
+                {{data.product}}
+            </td>
+            <td>
+                {{data.dateordered}}
+            </td>
+            <td>
+                {{data.quantity}}
+            </td>
+            <td>
+                <a href="{% url 'OrderDelete' data.id%}">delete</a>
+            </td>
+        </tr>
+    {%endfor%}
+</table>
+{%endblock%}
+

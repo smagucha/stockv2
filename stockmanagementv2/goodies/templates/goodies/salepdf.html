@@ -1,0 +1,72 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Document</title>
+    <style>
+        table {
+        border: 1px solid #ccc;
+        border-collapse: collapse;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+
+        }
+
+        table caption {
+        font-size: 1.5em;
+        margin: .5em 0 .75em;
+        }
+
+        table tr {
+        background-color: #f8f8f8;
+        border: 1px solid #ddd;
+
+        }
+
+        table th,
+        table td {
+        padding: .150em;
+         text-align:left;
+        }
+
+        table th {
+          text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+<table border="2">
+    <caption>Product Summary</caption>
+    <tr>
+        <th>
+           name
+        </th>
+        <th>
+            product category
+        </th>
+        <th>
+            weight
+        </th>
+        <th>
+            quantity
+        </th>
+    </tr>
+    {% for data in data %}
+        <tr>
+            <td>
+                 {{data.name}}
+            </td>
+            <td>
+                {{data.productcatergory}}
+            </td>
+            <td>
+                {{data.weight}}
+            </td>
+            <td>
+                {{data.quantity}}
+            </td>
+        </tr>
+    {%endfor%}
+</table>
+</body>
+</html>

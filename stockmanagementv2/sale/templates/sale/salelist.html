@@ -1,0 +1,70 @@
+{%extends 'goodies/base.html'%}
+{%block title%}{{page_title}}{%endblock title%}
+{%block content%}
+<a href="{% url 'SaleCreate' %}">add sale</a>
+<table border="2">
+    <caption>Sale Summary</caption>
+    <tr>
+        <th scope="col" >
+           served by
+        </th>
+        <th scope="col">
+            buy
+        </th>
+        <th scope="col">
+            buyer contact
+        </th>
+        <th scope="col">
+            client email
+        </th>
+        <th scope="col">
+            item
+        </th>
+        <th scope="col">
+           quantity
+        </th>
+        <th scope="col">
+            date
+        </th>
+        <th scope="col">
+            update
+        </th>
+        <th scope="col">
+            delete
+        </th>
+    </tr>
+    {% for data in saledata %}
+        <tr>
+            <td data-label="serverby">
+                 {{data.serverby}}
+            </td>
+            <td data-label="buyer">
+                {{data.buyer}}
+            </td>
+            <td data-label="buyer contact">
+                {{data.buyercontact}}
+            </td>
+            <td data-label="client email">
+                {{data.clientemail}}
+            </td>
+            <td data-label="item">
+                {{data.item}}
+            </td>
+            <td data-label="quantity">
+                {{data.quantity}}
+            </td>
+            <td data-label="date">
+                {{data.date}}
+            </td>
+
+            <td data-label="update">
+                <a href="{% url 'SaleUpdate' data.id%}">update</a>
+            </td>
+            <td data-label="delete">
+                <a href="{% url 'DeleteSale' data.id%}">delete</a>
+            </td>
+        </tr>
+    {%endfor%}
+</table>
+{%endblock%}
+

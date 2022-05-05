@@ -1,0 +1,58 @@
+{%extends 'goodies/base.html'%}
+{%block title%}{{page_title}}{%endblock title%}
+{%block content%}
+<a href="{% url 'ProductCreate' %}">add product</a>
+<a href="{% url 'SalePdfView' %}" style="float:right">download pdf for product </a>
+<table border="2">
+    <caption>Product Summary</caption>
+    <tr>
+        <th>
+           name
+        </th>
+        <th>
+            product category
+        </th>
+        <th>
+            weight
+        </th>
+        <th>
+            quantity
+        </th>
+        <th>
+            add
+        </th>
+        <th>
+            update
+        </th>
+        <th>
+            delete
+        </th>
+    </tr>
+    {% for data in data %}
+        <tr>
+            <td>
+                 {{data.name}}
+            </td>
+            <td>
+                {{data.productcatergory}}
+            </td>
+            <td>
+                {{data.weight}}
+            </td>
+            <td>
+                {{data.quantity}}
+            </td>
+            <td>
+                <a href="{% url 'AddProductQuantity' data.id%}">add</a>
+            </td>
+            <td>
+                <a href="{% url 'ProductUpdate' data.id%}">update</a>
+            </td>
+            <td>
+                <a href="{% url 'DeleteProduct' data.id%}">delete</a>
+            </td>
+        </tr>
+    {%endfor%}
+</table>
+{%endblock%}
+

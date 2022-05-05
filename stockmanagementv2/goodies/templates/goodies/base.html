@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{%block title%}{%endblock title%}</title>
+	<link rel="stylesheet" href="{% static 'css/styling.css' %}">
+
+</head>
+<body>
+ 	<div>
+	<div class="topnav" id="myTopnav">
+	  <a href="{% url 'home' %}">
+	  		Home
+	  </a>
+		<a href="{% url 'CategoryList' %}">
+	  		catergory
+	  </a>
+
+	  <a href="{% url 'SaleList' %}">
+				sales
+		</a>
+	  <a href="{% url 'OrderList' %}">
+				order list
+		</a>
+		<a href="{% url 'highstock'%}">
+				highstock
+		</a>
+		<a href="{% url 'less_stock'%}">
+				low stock
+		</a>
+	  <div class="dropdown" >
+	    <button class="dropbtn" >user setting
+	      <i class="fa fa-caret-down"></i>
+	    </button>
+	    <div class="dropdown-content">
+	      	<a href="{% url 'password_change' %}">
+						change password
+					</a>
+	      	<a href="{% url 'logout' %}">
+						logout
+					</a>
+	    </div>
+	  </div>
+	  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+ 		{%block content%}
+ 		{%endblock content%}
+ 	</div>
+ 	 <div class="main-footer">
+    	<strong>stock management system.</strong>
+  	</div>
+	 <script src="{% static 'js/nav.js' %}"></script>
+</body>
+</html>
