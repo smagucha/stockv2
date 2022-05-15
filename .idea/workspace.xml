@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff7e108c-9031-4208-8369-2b2529010a0b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/stockmanagementv2/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/stockmanagementv2/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockmanagementv2/goodies/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/stockmanagementv2/goodies/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockmanagementv2/stockmanagementv2/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/stockmanagementv2/stockmanagementv2/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockmanagementv2/stockmanagementv2/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/stockmanagementv2/stockmanagementv2/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/utils/encoding.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/utils/encoding.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/graphene_django/utils/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/graphene_django/utils/utils.py" afterDir="false" />
-    </list>
+    <list default="true" id="ff7e108c-9031-4208-8369-2b2529010a0b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,7 +23,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../python parallel programming/sort.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../python parallel programming" />
   </component>
   <component name="RunManager">
     <configuration name="sort" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
