@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ff7e108c-9031-4208-8369-2b2529010a0b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockmanagementv2/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/stockmanagementv2/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockmanagementv2/stockmanagementv2/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/stockmanagementv2/stockmanagementv2/schema.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
