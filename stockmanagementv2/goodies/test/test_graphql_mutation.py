@@ -127,7 +127,7 @@ class Test_Product_Catergory(GraphQLTestCase):
 			)
 		content = json.loads(response.content)
 		self.assertResponseNoErrors(response)
-		print(response.content)
+		
 		
 
 
